@@ -67,7 +67,7 @@ router.post('/kakao/login', async (req, res, next) => {
     }
     const header = {
         'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
-        'Authorization': 'Bearer '
+        'Authorization': 'Bearer ',
     };
     const queryString = Object.keys(data)
     .map(k=>encodeURIComponent(k)+'='+encodeURIComponent(data[k]))
